@@ -61,7 +61,7 @@ namespace DomainModel
         /// </summary>
         public int addZoomBar { get; set; }
         /// <summary>
-        /// 项目编号
+        /// 项目编号 关联项目表的主键
         /// </summary>
         public Guid pjid { get; set; }
     }

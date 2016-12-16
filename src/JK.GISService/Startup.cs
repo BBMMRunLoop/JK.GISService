@@ -55,11 +55,7 @@ namespace JK.GISService
                     ) );
                
             }
-
             services.AddScoped<IDataAccessProvider, DataAccessMssqlProvider>();
-
-
-
 
         }
 
