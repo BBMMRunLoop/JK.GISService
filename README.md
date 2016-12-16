@@ -1,4 +1,6 @@
-## ASP.NET Core WebApi + Microsoft.EntityFrameworkCore 连接 Mysql/Sqlserver 项目架构
+## ASP.NET Core WebApi + Microsoft.EntityFrameworkCore 连接 Mysql/Sqlserver 的项目框架搭建  
+  
+*项目源码地址 https://github.com/BBMMRunLoop/JK.GISService.git*
 
 这是一个 .net Core 下的 webapi + EntityFrameworkCore 连接 Mysql/Sqlserver 的简单项目架构。  
 
