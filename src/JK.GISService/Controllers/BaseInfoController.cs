@@ -43,5 +43,11 @@ namespace JK.GISService.Controllers
 
 
         }
+
+        [HttpGet ("{pstr}")]
+        public object dockerTest(string pstr) {
+
+            return pstr;
+        }
     }
 }
