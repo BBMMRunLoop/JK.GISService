@@ -1,8 +1,9 @@
 #基于 microsoft/dotnet:1.0.0-core 来构建我们的镜像
-FROM microsoft/dotnet:1.0.1-runtime
+FROM microsoft/dotnet:1.0-sdk-projectjson
 
 #拷贝项目publish文件夹中的所有文件到 docker容器中的publish文件夹中
 RUN mkdir /publish
+
 COPY . /workspace
 
 RUN cd ./workspace/src/JK.GISService
