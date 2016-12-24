@@ -4,15 +4,10 @@ FROM microsoft/dotnet:1.0-sdk-projectjson
 #拷贝项目publish文件夹中的所有文件到 docker容器中的publish文件夹中
 RUN mkdir /publish
 
-COPY . /workspace
+COPY ./workspace
 
-RUN cd ./workspace/src/JK.GISService
 
-RUN ls -l
-
-RUN ls -l ./workspace
-
-RUN dotnet publish -c release -o /publish
+RUN dotnet publish  ./workspace/src/JK.GISService/project.json  -c release -o /publish
 #设置工作目录为 /publish 文件夹，即容器启动默认的文件夹
 
 WORKDIR /publish
