@@ -4,7 +4,7 @@ FROM microsoft/dotnet:1.0-sdk-projectjson
 #拷贝项目publish文件夹中的所有文件到 docker容器中的publish文件夹中
 RUN mkdir /publish
 
-COPY ./workspace
+COPY . /workspace
 
 
 RUN dotnet publish  ./workspace/src/JK.GISService/project.json  -c release -o /publish
