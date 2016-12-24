@@ -8,6 +8,8 @@ COPY . /workspace
 
 RUN cd ./workspace/src/JK.GISService
 
+RUN ls -l
+
 RUN dotnet publish -c release -o /publish
 #设置工作目录为 /publish 文件夹，即容器启动默认的文件夹
 
