@@ -6,6 +6,7 @@ RUN mkdir /publish
 
 COPY . /workspace
 
+RUN dotnet restore  ./workspace/src/JK.GISService/project.json
 
 RUN dotnet publish  ./workspace/src/JK.GISService/project.json  -c release -o /publish
 #设置工作目录为 /publish 文件夹，即容器启动默认的文件夹
