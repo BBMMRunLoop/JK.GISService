@@ -1,6 +1,6 @@
 #基于 microsoft/dotnet:1.0.0-core 或者 runtime 来构建我们的镜像适合直接运行发布的产品
 #microsoft/dotnet:1.0-sdk-projectjson 适合在容器中执行项目的构建比如dotnet restore / publish 等dotnet指令 包括core和dotnet命令环境
-FROM microsoft/dotnet:1.0-sdk-projectjson
+FROM microsoft/dotnet:1.0.1-runtime
 
 #拷贝项目publish文件夹中的所有文件到 docker容器中的publish文件夹中
 #RUN mkdir /publish
