@@ -24,5 +24,10 @@ namespace DomainModel
         /// 创建时间
         /// </summary>
         public DateTime cdTime { get; set; }
+
+        /// <summary>
+        /// 项目说明
+        /// </summary>
+        public string projectMark { get; set; }
     }
 }

@@ -4,8 +4,11 @@
   "dependencies": {
     "NETStandard.Library": "1.6.0",
     "System.ComponentModel.Annotations": "4.3.0"
+   
   },
 
+
+  //Scaffold-DbContext  "server=localhost;userid=jkgis;password=gis888888;database=jkgisdb;" SapientGuardian.EntityFrameworkCore.MySql -OutputDir Models
   "frameworks": {
     "netstandard1.6": {
       "imports": "dnxcore50"
